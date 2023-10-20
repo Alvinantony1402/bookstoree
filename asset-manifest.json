@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bookstoree/static/css/main.fd60fd94.css",
+    "main.js": "/bookstoree/static/js/main.09c7aa64.js",
+    "static/media/cover.jpg": "/bookstoree/static/media/cover.a622356b88978cf3d6cd.jpg",
+    "static/media/Cover_page.jpg": "/bookstoree/static/media/Cover_page.84a0935143fcb648c372.jpg",
+    "index.html": "/bookstoree/index.html",
+    "main.fd60fd94.css.map": "/bookstoree/static/css/main.fd60fd94.css.map",
+    "main.09c7aa64.js.map": "/bookstoree/static/js/main.09c7aa64.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd60fd94.css",
+    "static/js/main.09c7aa64.js"
+  ]
+}
