@@ -23,6 +23,7 @@ function Pos() {
     const scrollToCart = () => {
         if (cartSectionRef.current) {
           cartSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+          setIsLoading(false);
         }
       };
     const fetchProducts = async() => {
