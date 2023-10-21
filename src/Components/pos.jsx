@@ -28,7 +28,8 @@ function Pos() {
     const fetchProducts = async() => {
 
         setIsLoading(true);
-        const result = await axios.get('products')
+        //console.log("loaded");
+        const result = await axios.get('https://bookdb-5h2w.onrender.com/products')
         setProducts(await result.data);
         setIsLoading(false);
     }
