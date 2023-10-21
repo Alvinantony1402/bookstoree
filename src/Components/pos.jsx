@@ -153,8 +153,8 @@ const removeProduct = async(products) =>{
         <div style={{display: "none"}}>
                 <ComponentToPrint cart={cart} totalAmount={totalAmount} ref={componentRef}/>
               </div>
-              <div className='table-responsive bg-dark bg-transparent' >
-                <table className='table table-responsive table-dark table-hover'>
+              <div className='table-responsive bg-transparent' >
+                <table className='table table-responsive table-hover'>
                   <thead>
                     <tr>
                       <td>#</td>
