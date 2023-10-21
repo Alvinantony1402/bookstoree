@@ -23,7 +23,6 @@ function Pos() {
     const scrollToCart = () => {
         if (cartSectionRef.current) {
           cartSectionRef.current.scrollIntoView({ behavior: 'smooth' });
-          setIsLoading(false);
         }
       };
     const fetchProducts = async() => {
@@ -114,7 +113,9 @@ const removeProduct = async(products) =>{
        
   <div class="container-fluid ">
     <a class="navbar-brand"></a>
-    <form class="d-flex" role="search">
+    <form class="d-flex" role="search"onSubmit={(e) => {
+                e.preventDefault(); // Prevent the default submission
+              }}>
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
       <button class="btn btn-outline-success" type="submit">Search</button>
       <button className='btn btn-outline-primary' onClick={scrollToCart}>
@@ -154,8 +155,8 @@ const removeProduct = async(products) =>{
         <div style={{display: "none"}}>
                 <ComponentToPrint cart={cart} totalAmount={totalAmount} ref={componentRef}/>
               </div>
-              <div className='table-responsive bg-transparent' >
-                <table className='table table-responsive table-hover'>
+              <div className='table-responsive bg-dark bg-transparent' >
+                <table className='table table-responsive table-dark table-hover'>
                   <thead>
                     <tr>
                       <td>#</td>
